@@ -1,0 +1,60 @@
+---
+title: "fars"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  width= 68
+)
+options(width = 68, cli.unicode = FALSE, cli.width = 68)
+```
+# fars package
+
+The **fars** package is a collection of functions that can be used to 
+read, wrangle, and plot multiple years of state US National Highway Traffic Safety Administration Fatality Analysis Reporting System data. 
+
+The fars is easy to download and install.
+
+```{r setup, eval=FALSE}
+install.packages("fars")
+library(fars)
+```
+
+# Functions
+
+The function *make_filename* is useful for quickly creating potential filenames
+based on the year of the data. This is assuming that you have downloaded the 
+data as `r paste0("accident_year.csv.bz2")`.
+```{r name, eval=FALSE}
+test_year <- make_filename(2010)
+test_year
+```
+
+The function *fars_read* uses the filename to check for the existence of the 
+.csv in the folder. This function will tell you if the file does not exist.
+```{r read, eval=FALSE}
+test_df <- fars_read(test_year)
+```
+
+The function *fars_read_years* takes a list of years and checks for associated data
+in the location. If exists it will read in the data file, creating a dataframe 
+consisting of month and year.
+```{r years, eval=FALSE}
+test_df <- fars_read_years(years)
+```
+
+To get summary data, use *fars_zummarize_years*.
+```{r summary, eval=FALSE}
+test_df <- fars_summarize_years(years)
+```
+Plot the accidents.
+```{r, eval=FALSE}
+fars_map_state(state.num,year)
+```
