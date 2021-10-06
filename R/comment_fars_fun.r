@@ -2,9 +2,9 @@
 #' Highway Traffic Safety Administration's Fatality Analysis Reporting System,
 #' which is a nationwide census providing the American public yearly data
 #' regarding fatal injuries suffered in motor vehicle traffic crashes.
-#' @import(tidyr)
-#' @import(maps)
-#' @import(magrittr)
+#' @import tidyr
+#' @import maps
+#' @import magrittr
 #' @importFrom dplyr tbl_df
 #' @importFrom dplyr mutate
 #' @importFrom dplyr select
