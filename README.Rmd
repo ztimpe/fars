@@ -27,13 +27,10 @@ The goal of fars is to ...
 
 You can install the released version of fars from [CRAN](https://CRAN.R-project.org) with:
 
-``` r
-install.packages("fars")
-```
 
 And the development version from [GitHub](https://github.com/) with:
 
-``` r
+```{r}
 # install.packages("devtools")
 devtools::install_github("ztimpe/fars")
 ```
