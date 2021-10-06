@@ -11,6 +11,7 @@
 #' @importFrom dplyr filter
 #' @importFrom dplyr summarize
 #' @importFrom dplyr group_by
+#' @importFrom dplyr bind_rows
 #' @importFrom readr read_csv
 #'
 #'
