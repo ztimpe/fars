@@ -16,9 +16,10 @@ knitr::opts_chunk$set(
 # fars
 
 <!-- badges: start -->
-  [![R-CMD-check](https://github.com/ztimpe/fars/workflows/R-CMD-check/badge.svg)](https://github.com/ztimpe/fars/actions)
-[![R-CMD-check](https://github.com/ztimpe/fars/workflows/R-CMD-check/badge.svg)](https://github.com/ztimpe/fars/actions)
+[![Build Status](https://app.travis-ci.com/ztimpe/fars.svg?branch=master)](https://app.travis-ci.com/ztimpe/fars)
 <!-- badges: end -->
+
+
 
 The goal of fars is to ...
 
